@@ -1,0 +1,57 @@
+// Example program
+#include <iostream>
+#include <string>
+#include <math.h> 
+// CPP program to check Proth number 
+ 
+using namespace std; 
+
+// Utility function to check power of two 
+int n = n - 1;
+bool j = 0;  
+  
+// Function to check if the 
+// Given number is Proth number or not 
+bool isProthNumber(int n) 
+{ 
+  
+    int k = 1; 
+    while (k < (n / k)) { 
+  
+        // check if k divides n or not 
+        if (n % k == 0) { 
+  
+            // Check if n/k is power of 2 or not 
+    
+    for (int i=0; j<n; i++) {
+            j = 2 ^ i;
+        if (j == n) {
+            return true;
+        }
+    }
+        }
+// update k to next odd number 
+        k = k + 2; 
+    } 
+  
+    // If we reach here means 
+    // there exists no value of K 
+    // Such that k is odd number 
+    // and n/k is a power of 2 greater than k 
+    return false; 
+} 
+
+int main() 
+{ 
+  
+    // Get n 
+    int n = 25; 
+  
+    // Check n for Proth Number 
+    if (isProthNumber(n)) 
+        cout << "YES"; 
+    else
+        cout << "NO"; 
+  
+    return 0; 
+} 
