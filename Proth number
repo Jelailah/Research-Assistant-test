@@ -1,4 +1,3 @@
-// Example program
 #include <iostream>
 #include <string>
 #include <math.h> 
@@ -6,12 +5,11 @@
  
 using namespace std; 
 
-// Utility function to check power of two 
+//Initializations 
 int n = n - 1;
 bool j = 0;  
   
-// Function to check if the 
-// Given number is Proth number or not 
+// Function to check if the given number is a Proth number or not 
 bool isProthNumber(int n) 
 { 
   
@@ -21,8 +19,7 @@ bool isProthNumber(int n)
         // check if k divides n or not 
         if (n % k == 0) { 
   
-            // Check if n/k is power of 2 or not 
-    
+            // Check if n/k is power of 2 or not    
     for (int i=0; j<n; i++) {
             j = 2 ^ i;
         if (j == n) {
@@ -34,10 +31,8 @@ bool isProthNumber(int n)
         k = k + 2; 
     } 
   
-    // If we reach here means 
-    // there exists no value of K 
-    // Such that k is odd number 
-    // and n/k is a power of 2 greater than k 
+    // If we reach here, it means that there exists no value of k
+    // Such that k is an odd number and n/k is a power of 2 greater than k 
     return false; 
 } 
 
