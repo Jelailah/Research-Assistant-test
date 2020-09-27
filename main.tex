@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Maths Solution}
+\author{Anofiu Jelilat }
+\date{September 2020}
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\begin{document}
+
+\maketitle
+
+\section*{Question}
+(Please show your workings). Over all real numbers, find the minimum value of a positive real number, $y$ such that
+$$y = \sqrt{((x+6)^2 + 25)}+ \sqrt{((x-6)^2 + 121)}$$
+
+\section*{Solution}
+Recall that $y$ is said to have a minimum value at the point $x$ where $y^{'}(x) = 0$.\\\\
+Let $u = \sqrt{((x+6)^2 + 25)}$ and $v = \sqrt{((x-6)^2 + 121)}$. Hence, $y^{'} = u^{'} + v^{'}$.\\\\
+Also let $u = \sqrt{a},$ where $a = (x+6)^2 + 25$. $u^{'} = \frac{du}{da}\times \frac{da}{dx}$\\\\
+$u^{'} = -2(x+6)\times \frac{1}{2}a^{-\frac{1}{2}} $. Similarly, $v^{'} = -2(x-6)\times \frac{1}{2}b^{-\frac{1}{2}} $, where $b = (x-6)^2 + 121$. \\\\
+$\implies y^{'} = \dfrac{(x+6)}{((x+6)^{2}+25)^{\frac{1}{2}}} + \dfrac{(x-6)}{((x-6)^{2}+121))^{\frac{1}{2}}} = 0$\\
+$\implies (x+6)((x-6)^{2}+121))^{\frac{1}{2}} + (x-6)((x+6)^{2}+25)^{\frac{1}{2}} = 0$\\
+$\implies (x+6)((x-6)^{2}+121))^{\frac{1}{2}} = -(x-6)((x+6)^{2}+25)^{\frac{1}{2}}$\\
+$\implies (x+6)^{2}((x-6)^{2}+121)= (x-6)^{2}((x+6)^{2}+25)$\\
+$\implies 121(x+6)^{2}=25(x-6)^{2}$\\
+$\implies 11(x+6)=5(x-6)$\\
+$\implies 11x+66-5x+30 \implies 6x = 96$\\
+$\implies x = 16$\\\\
+Hence, $y$ is at a minimum when $x = 16$. So, we have the minimum value of $y = \sqrt{((16+6)^2 + 25)}+ \sqrt{((16-6)^2 + 121)}=37.43$
+\end{document}
